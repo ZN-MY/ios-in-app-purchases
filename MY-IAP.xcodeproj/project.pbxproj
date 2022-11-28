@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F2E668B2933A4F100FC1264 /* MY_IAPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E668A2933A4F100FC1264 /* MY_IAPApp.swift */; };
+		2F178DDF29347EB80061100E /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F178DDE29347EB80061100E /* ProductRowView.swift */; };
+		2F178DE229347EDB0061100E /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F178DE129347EDB0061100E /* NumberFormatter+Extensions.swift */; };
+		2F178DE429347EF20061100E /* NSDecimalNumber+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F178DE329347EF20061100E /* NSDecimalNumber+Extensions.swift */; };
+		2F178DE829347F830061100E /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F178DE729347F830061100E /* Collection+Extensions.swift */; };
+		2F2E668B2933A4F100FC1264 /* IAPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E668A2933A4F100FC1264 /* IAPApp.swift */; };
 		2F2E668D2933A4F100FC1264 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E668C2933A4F100FC1264 /* ContentView.swift */; };
 		2F2E668F2933A4F200FC1264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2E668E2933A4F200FC1264 /* Assets.xcassets */; };
 		2F2E66922933A4F200FC1264 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2E66912933A4F200FC1264 /* Preview Assets.xcassets */; };
+		2F2E669A2934471700FC1264 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2E66992934471700FC1264 /* StoreKit.framework */; };
+		2F2E669C29344C0100FC1264 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E669B29344C0100FC1264 /* StoreManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F178DDD29347D9B0061100E /* MY-IAP-Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MY-IAP-Products.storekit"; sourceTree = "<group>"; };
+		2F178DDE29347EB80061100E /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
+		2F178DE129347EDB0061100E /* NumberFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		2F178DE329347EF20061100E /* NSDecimalNumber+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+Extensions.swift"; sourceTree = "<group>"; };
+		2F178DE729347F830061100E /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		2F2E66872933A4F100FC1264 /* MY-IAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MY-IAP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F2E668A2933A4F100FC1264 /* MY_IAPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MY_IAPApp.swift; sourceTree = "<group>"; };
+		2F2E668A2933A4F100FC1264 /* IAPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPApp.swift; sourceTree = "<group>"; };
 		2F2E668C2933A4F100FC1264 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F2E668E2933A4F200FC1264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F2E66912933A4F200FC1264 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F2E66992934471700FC1264 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2F2E669B29344C0100FC1264 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2E669A2934471700FC1264 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F178DE029347ED00061100E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F178DE129347EDB0061100E /* NumberFormatter+Extensions.swift */,
+				2F178DE329347EF20061100E /* NSDecimalNumber+Extensions.swift */,
+				2F178DE729347F830061100E /* Collection+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2F2E667E2933A4F100FC1264 = {
 			isa = PBXGroup;
 			children = (
 				2F2E66892933A4F100FC1264 /* MY-IAP */,
 				2F2E66882933A4F100FC1264 /* Products */,
+				2F2E66982934471700FC1264 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +76,13 @@
 		2F2E66892933A4F100FC1264 /* MY-IAP */ = {
 			isa = PBXGroup;
 			children = (
-				2F2E668A2933A4F100FC1264 /* MY_IAPApp.swift */,
+				2F2E668A2933A4F100FC1264 /* IAPApp.swift */,
 				2F2E668C2933A4F100FC1264 /* ContentView.swift */,
+				2F178DDE29347EB80061100E /* ProductRowView.swift */,
+				2F2E669B29344C0100FC1264 /* StoreManager.swift */,
+				2F178DDD29347D9B0061100E /* MY-IAP-Products.storekit */,
 				2F2E668E2933A4F200FC1264 /* Assets.xcassets */,
+				2F178DE029347ED00061100E /* Extensions */,
 				2F2E66902933A4F200FC1264 /* Preview Content */,
 			);
 			path = "MY-IAP";
@@ -65,6 +94,14 @@
 				2F2E66912933A4F200FC1264 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F2E66982934471700FC1264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F2E66992934471700FC1264 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2E669C29344C0100FC1264 /* StoreManager.swift in Sources */,
 				2F2E668D2933A4F100FC1264 /* ContentView.swift in Sources */,
-				2F2E668B2933A4F100FC1264 /* MY_IAPApp.swift in Sources */,
+				2F178DE829347F830061100E /* Collection+Extensions.swift in Sources */,
+				2F178DE229347EDB0061100E /* NumberFormatter+Extensions.swift in Sources */,
+				2F2E668B2933A4F100FC1264 /* IAPApp.swift in Sources */,
+				2F178DE429347EF20061100E /* NSDecimalNumber+Extensions.swift in Sources */,
+				2F178DDF29347EB80061100E /* ProductRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

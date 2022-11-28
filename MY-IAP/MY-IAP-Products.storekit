@@ -1,0 +1,79 @@
+{
+  "identifier" : "F9C11ADD",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "6444748089",
+      "localizations" : [
+        {
+          "description" : "One Coin to Rule them all",
+          "displayName" : "Coin",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "Coin",
+      "referenceName" : "MY-IAP-Coin",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "6444748506",
+      "localizations" : [
+        {
+          "description" : "Extra good stuff",
+          "displayName" : "MY-IAP Premium extra features",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "Premium",
+      "referenceName" : "MY-IAP-Premium",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6444748066",
+    "_developerTeamID" : "4BP826FJGX",
+    "_lastSynchronizedDate" : 691305890.59119499
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21071286",
+      "localizations" : [
+
+      ],
+      "name" : "MY-IAP-Sub",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "1.49",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6444748572",
+          "introductoryOffer" : null,
+          "localizations" : [
+
+          ],
+          "productID" : "Monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Sub-Month",
+          "subscriptionGroupID" : "21071286",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}
